@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shape_item_dialog_assess"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="28dp"
+            android:text="温馨提示"
+            android:textColor="@color/global_txt_black4"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="29dp"
+            android:text="是否将还款提醒添加到手机日程？"
+            android:textColor="@color/global_txt_black5"
+            android:textSize="15sp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="25dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_dialog_calendar_no"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_confirm_sell_out_bg"
+                android:gravity="center"
+                android:text="否"
+                android:textColor="@color/global_blue_end"
+                android:layout_marginRight="@dimen/dp_5"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_dialog_calendar_yes"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:background="@drawable/global_btn_selector"
+                android:gravity="center"
+                android:text="是"
+                android:textColor="@color/global_txt_white"
+                android:textSize="14sp" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

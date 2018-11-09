@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="MyEditText">
+        <attr name="promp" format="string" />
+        <attr name="hint" format="string" />
+        <attr name="drawable" format="reference" />
+        <attr name="rt_text" format="string" />
+        <attr name="edit_text" format="string" />
+        <attr name="line_margin" format="dimension" />
+        <attr name="left_width" format="dimension" />
+        <attr name="is_edit" format="boolean" />
+        <attr name="inputType" format="enum">
+            <enum name="text" value="1" />
+            <enum name="number" value="2" />
+            <enum name="password" value="3" />
+
+        </attr>
+        <attr name="maxLength" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="MyLoginEditText">
+        <attr name="login_edit_img_left" format="reference" />
+        <attr name="login_edit_img_right" format="reference" />
+        <attr name="login_edit_img_right2" format="reference" />
+        <attr name="login_edit_content" format="string" />
+        <attr name="login_edit_if_edit" format="boolean" />
+        <attr name="login_edit_hint" format="string" />
+        <attr name="login_edit_img_size" format="integer" />
+        <attr name="login_edit_text_size" format="integer" />
+        <attr name="login_edit_maxLength" format="integer" />
+        <attr name="login_edit_tv_right" format="string" />
+        <attr name="login_edit_inputType" format="enum">
+            <enum name="text" value="1" />
+            <enum name="number" value="2" />
+            <enum name="password" value="3" />
+            <enum name="phone" value="4" />
+        </attr>
+
+    </declare-styleable>
+
+    <declare-styleable name="MyTextView">
+        <attr name="setting_tv_content" format="string"></attr>
+        <attr name="setting_img_right" format="reference"></attr>
+        <attr name="setting_tv_size" format="integer"></attr>
+        <attr name="setting_layout_father_height" format="integer"></attr>
+        <attr name="setting_tv_right" format="string"></attr>
+
+    </declare-styleable>
+    <declare-styleable name="ClassicCustomerHeader">
+        <attr name="srlClassicsSpinnerStyle" />
+        <attr name="srlPrimaryColor" />
+        <attr name="srlAccentColor" />
+        <attr name="srlFinishDuration" />
+        <attr name="srlDrawableArrow" />
+        <attr name="srlDrawableProgress" />
+        <attr name="srlDrawableMarginRight" />
+        <attr name="srlDrawableSize" />
+        <attr name="srlDrawableArrowSize" />
+        <attr name="srlDrawableProgressSize" />
+        <attr name="srlTextSizeTitle" />
+        <attr name="srlTextSizeTime" />
+        <attr name="srlTextTimeMarginTop" format="dimension" />
+        <attr name="srlEnableLastTime" format="boolean" />
+    </declare-styleable>
+
+</resources>

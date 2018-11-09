@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/shape_white_corner_8dp">
+
+
+        <RelativeLayout
+            android:id="@+id/rl_un_use_coupons_moneys"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/icon_bg_coupons_gray">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+
+                <TextView
+                    android:id="@+id/tv_item_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:includeFontPadding="false"
+                    android:text="￥"
+                    android:textColor="@color/white"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/tv_item_money_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="50sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_item_tips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_item_money"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="@color/white"
+                    android:textSize="11sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_item_coupons_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/rl_un_use_coupons_moneys"
+            android:textColor="@color/edit_text_hint_color"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_item_coupons_valid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_item_coupons_name"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/rl_un_use_coupons_moneys"
+            android:textColor="@color/edit_text_hint_color"
+            android:textSize="10sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_half_circle"
+            android:background="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_item_coupons_immediate_use"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="9dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/icon_invalid_coupons"
+            android:gravity="center"
+            android:textColor="@color/coupons_used_color"
+            android:textSize="9sp" />
+
+        <TextView
+            android:id="@+id/tv_item_coupons_description"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/rl_un_use_coupons_moneys"
+            android:gravity="center_vertical"
+            android:textColor="@color/edit_text_hint_color"
+            android:textSize="11sp" />
+
+        <View
+            android:id="@+id/tv_item_view_line"
+            android:layout_width="wrap_content"
+            android:layout_height="1px"
+            android:layout_above="@+id/tv_item_coupons_description"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/rl_un_use_coupons_moneys"
+            android:background="@drawable/icon_coupons_line" />
+    </RelativeLayout>
+</LinearLayout>

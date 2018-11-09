@@ -1,0 +1,34 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/global_bg_gray"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_online"
+        style="@style/AppTheme.Toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_height">
+
+            <TextView
+                android:id="@+id/tv_online_back"
+                style="@style/title_back_style" />
+
+            <TextView
+                style="@style/title_txt_style"
+                android:text="在线客服" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <include layout="@layout/layout_global_title_line" />
+
+    <WebView
+        android:id="@+id/sobot_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

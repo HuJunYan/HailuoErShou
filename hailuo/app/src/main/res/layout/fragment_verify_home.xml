@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/global_bg_gray">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/verify_home_main"
+            style="@style/HomeAppTheme.Toolbar">
+
+        </android.support.v7.widget.Toolbar>
+
+        <RelativeLayout
+            android:id="@+id/verify_rl_main_banner"
+            android:layout_width="match_parent"
+            android:layout_height="188dp">
+            <!--   android:src="@drawable/main_top_img"-->
+            <!-- <com.youth.banner.Banner
+                 android:id="@+id/verify_home_banner"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 app:banner_layout="@layout/view_home_banner"
+                 app:indicator_drawable_selected="@drawable/shape_half_blank_dot"
+                 app:indicator_drawable_unselected="@drawable/shape_half_white_dot" />-->
+
+            <ImageView
+                android:id="@+id/verify_home_banner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/banner_verify" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:background="#22000000">
+
+                <TextSwitcher
+                    android:id="@+id/verify_main_top_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:ellipsize="end"
+                    android:inAnimation="@anim/push_up_in"
+                    android:outAnimation="@anim/push_up_out"
+                    android:text="用户22刚刚卖出来了一款iPhone X"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_12" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_marginTop="173dp">
+
+            <RelativeLayout
+                android:id="@+id/verify_rl_phone_info_layout"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/shape_main_phone_bg">
+
+                <ImageView
+                    android:id="@+id/verify_phone_img"
+                    android:layout_width="84dp"
+                    android:layout_height="129dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="30dp"
+                    android:src="@drawable/android_default" />
+
+                <TextView
+                    android:id="@+id/verify_phone_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_toRightOf="@id/verify_phone_img"
+                    android:text="您的手机型号"
+                    android:textColor="@color/global_txt_black4"
+                    android:textSize="@dimen/sp_18"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:id="@+id/verify_rl_phone_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/verify_phone_type"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="35dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_toRightOf="@id/verify_phone_img">
+
+                    <TextView
+                        android:id="@+id/verify_tv_home_phone_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:background="@android:color/white"
+                        android:text="系统："
+                        android:textColor="@color/global_txt_black4"
+                        android:textColorHint="@color/edit_text_hint_color"
+                        android:textSize="14sp" />
+
+
+                    <TextView
+                        android:id="@+id/verify_tv_home_phone_os"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@id/verify_tv_home_phone_name"
+                        android:text="android"
+                        android:textColor="@color/global_txt_black4"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/arraw_down"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/verify_rl_phone_memory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/verify_rl_phone_name"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="35dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_toRightOf="@id/verify_phone_img">
+
+                    <TextView
+                        android:id="@+id/verify_tv_home_phone_memory"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="内存："
+                        android:textColor="@color/global_txt_black4"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/verify_tv_home_phone_memory_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@id/verify_tv_home_phone_memory"
+                        android:gravity="center_vertical"
+                        android:text=""
+                        android:textColor="@color/global_txt_black4"
+                        android:textColorHint="@color/edit_text_hint_color"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/arraw_down"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/verify_phone_max_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/verify_rl_phone_memory"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:layout_toRightOf="@id/verify_phone_img"
+                    android:text="最高回收：8000￥"
+                    android:textColor="@color/global_bg_price"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/verify_tv_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/verify_phone_max_price"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:layout_toRightOf="@id/verify_phone_img"
+                    android:text="状态："
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/verify_phone_re_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/verify_phone_max_price"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:layout_toRightOf="@id/verify_tv_status"
+                    android:textColor="@color/verify_home_title_color"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/verify_rl_progress_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/verify_rl_phone_info_layout"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@drawable/shape_main_phone_bg">
+
+                <TextView
+                    android:id="@+id/verify_phone_recyl_progress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="25dp"
+                    android:text="回收流程"
+                    android:textColor="@color/global_txt_black4"
+                    android:textSize="@dimen/sp_18" />
+
+                <RelativeLayout
+                    android:id="@+id/verify_ll_progress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/verify_phone_recyl_progress"
+                    android:layout_marginLeft="34dp"
+                    android:layout_marginTop="23dp">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/verify_home_recycle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/verify_bt_home_identity"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_40"
+                    android:layout_below="@id/verify_ll_progress"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginLeft="@dimen/dp_50"
+                    android:layout_marginRight="@dimen/dp_50"
+                    android:layout_marginTop="26dp"
+                    android:background="@drawable/global_button_selector_circle"
+                    android:gravity="center"
+                    android:text="马上评估，立即拿钱"
+                    android:textColor="@color/white" />
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>

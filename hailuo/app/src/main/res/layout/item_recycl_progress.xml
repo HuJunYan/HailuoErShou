@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/dot_top"
+            android:layout_width="1px"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:background="@color/global_line_bg" />
+
+        <ImageView
+            android:id="@+id/iv_dot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/round_grey" />
+
+        <View
+            android:id="@+id/dot_bottom"
+            android:layout_width="1px"
+            android:layout_height="0dp"
+            android:layout_weight="7"
+            android:background="@color/global_line_bg" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="等待发货"
+                android:textColor="@color/global_txt_black4"
+                android:textSize="@dimen/sp_16" />
+
+            <TextView
+                android:id="@+id/status_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="@dimen/dp_5"
+                android:text="2018-01-02"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/global_txt_black5"
+                android:textSize="@dimen/sp_12" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/status_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_4"
+            android:layout_marginTop="8dp"
+            android:text="等待发货"
+            android:textSize="@dimen/sp_12" />
+
+
+    </LinearLayout>
+</LinearLayout>

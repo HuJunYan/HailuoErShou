@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3281ff</color>
+    <color name="colorPrimaryDark">#3281ff</color>
+    <color name="colorAccent">#3281ff</color>
+    <color name="colorGreen">#ff669900</color>
+    <color name="colorGray">#adadad</color>
+    <color name="colorGoldRed">#ff6633</color>
+
+    <color name="me_bg_color">#F4F4F4</color>
+    <color name="me_bg_line_color">#eeeeee</color>
+    <color name="me_text_color">#333333</color>
+    <color name="edit_text_baseline_color">#E0E0E0</color>
+    <color name="edit_text_hint_color">#969696</color>
+    <color name="forget_pwd_color">#40A1F7</color>
+    <color name="argument_color">#888888</color>
+
+
+    <color name="light_gray">#77777777</color>
+    <color name="black">#000000</color>
+
+    <color name="dialog_bg_color">#00FFFFFF</color>
+
+    <!--全局背景颜色-->
+    <color name="global_bg_white">#ffffffff</color>
+    <color name="global_bg_gray">#f5f5f5</color>
+    <!--全局字体颜色-->
+    <color name="global_txt_black1">#000000</color>
+    <color name="global_txt_black2">#555555</color>
+    <color name="global_txt_black3">#888888</color>
+    <color name="global_txt_black4">#333333</color>
+    <color name="global_txt_black5">#666666</color>
+    <color name="global_txt_black6">#969696</color>
+    <color name="global_txt_black7">#c5c5c5</color>
+    <!--全局分割线颜色-->
+    <color name="global_line_bg">#e0e0e0</color>
+    <!--全局颜色-->
+    <color name="global_blue_start">#1f98f1</color>
+    <color name="global_blue_end">#3281ff</color>
+    <color name="global_orange">#ffa11b</color>
+
+    <color name="global_red_color">#FF5353</color>
+    <color name="me_txt_red_color">#FF0000</color>
+    <color name="main_bottom_line_color">#cccccc</color>
+
+    <color name="global_txt_orange">#ffba00</color>
+    <color name="global_bg">#cfa967</color>
+    <color name="global_bg_price">#c39039</color>
+    <color name="global_txt_gray">#c5c5c5</color>
+    <color name="global_txt_white">#ffffff</color>
+
+    <color name="me_weixin_color">#5a92e7</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="dialog_item_line_color">#EEEEEE</color>
+
+    <color name="red">#FFFF0000</color>
+    <color name="color_rules_content_bg">#F8F8F8</color>
+
+    <color name="global_activity_bg_color">#f5f5f5</color>
+    <color name="home_item_button_color">#fe4550</color>
+    <color name="verify_home_title_color">#ff3a3a</color>
+    <color name="assess_success_title_color">#2d2c2a</color>
+    <color name="assess_success_tips_color">#a5a5a5</color>
+    <color name="coupons_used_color">#ff7f7f</color>
+
+    <!-- Message Center-->
+    <color name="message_title">@color/global_txt_black4</color>
+    <color name="message_title_read">@color/edit_text_hint_color</color>
+    <color name="message_desc">@color/global_txt_black5</color>
+    <color name="message_desc_read">@color/edit_text_hint_color</color>
+</resources>

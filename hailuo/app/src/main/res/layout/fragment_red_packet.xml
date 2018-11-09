@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.scwang.smartrefresh.layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/srl_red_packet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/global_activity_bg_color">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_red_packet"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/global_bg_white" />
+
+        <LinearLayout
+            android:id="@+id/rl_red_packet"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/global_activity_bg_color"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="140dp"
+                android:src="@drawable/icon_no_cash_red_packet" />
+
+            <TextView
+                android:id="@+id/tv_packet_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_50"
+                android:text=""/>
+
+        </LinearLayout>
+    </FrameLayout>
+
+
+</com.scwang.smartrefresh.layout.SmartRefreshLayout>

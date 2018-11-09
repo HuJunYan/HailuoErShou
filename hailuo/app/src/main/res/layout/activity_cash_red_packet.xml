@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".ui.activity.CashRedPacketActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_cash_red_packet"
+        style="@style/AppTheme.Toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_height">
+
+            <TextView
+                android:id="@+id/iv_cash_red_packet_return"
+                style="@style/title_back_style" />
+
+            <TextView
+                style="@style/title_txt_style"
+                android:text="我的现金红包" />
+
+            <TextView
+                android:id="@+id/tv_withdraw"
+                style="@style/title_txt_style"
+                android:layout_width="46dp"
+                android:layout_height="28dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="@dimen/dp_15"
+                android:background="@drawable/icon_withdraw_gray"
+                android:gravity="center"
+                android:text="提现"
+                android:enabled="false"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eeeeee" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:text="可提现金额（元）"
+            android:textColor="@color/global_txt_black4"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:id="@+id/tv_withdraw_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:layout_marginRight="@dimen/dp_15"
+            android:text="满50可提现，每天限提500（元）"
+            android:textColor="@color/global_txt_black6"
+            android:textSize="@dimen/sp_12" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_withdraw_avaliable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginTop="10dp"
+        android:text="0.00"
+        android:textColor="@color/global_txt_black4"
+        android:textSize="40sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="#eeeeee" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_red_packet_income"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="累计收入（元）" />
+
+            <TextView
+                android:id="@+id/tv_total_income"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_red_packet_income"
+                android:gravity="center"
+                android:text="0.00" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="@dimen/dp_50"
+            android:background="#eeeeee" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_red_packet_withdraw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="已提现（元）" />
+
+            <TextView
+                android:id="@+id/tv_withdraw_history"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_red_packet_withdraw"
+                android:gravity="center"
+                android:text="0.00" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:paddingLeft="@dimen/dp_15"
+        android:background="#EEEEEE"
+        android:gravity="center_vertical"
+        android:text="收支明细"
+        android:textColor="@color/global_txt_black5"
+        android:textSize="@dimen/sp_12" />
+
+    <com.androidkun.xtablayout.XTabLayout
+        android:id="@+id/xTablayout_red_packet"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/global_bg_white"
+        app:xTabDisplayNum="2"
+        app:xTabDividerWidthWidthText="false"
+        app:xTabIndicatorColor="@color/colorPrimary"
+        app:xTabIndicatorHeight="2dp"
+        app:xTabMode="scrollable"
+        app:xTabSelectedTextColor="@color/global_txt_black4"
+        app:xTabSelectedTextSize="15sp"
+        app:xTabTextColor="@color/global_txt_black4"
+        app:xTabTextSize="15sp" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager_red_packet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:background="@color/global_bg_white"/>
+</LinearLayout>

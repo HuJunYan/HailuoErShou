@@ -1,0 +1,148 @@
+<resources>
+    <string name="app_name">海螺商城</string>
+
+    <string name="home_title">@string/app_name</string>
+
+    <string name="me">我的</string>
+
+    <string name="me_billing_details">账单明细</string>
+    <string name="me_about_kuaidadai">关于海螺商城</string>
+    <string name="me_settings">设置</string>
+    <string name="forget_password">忘记密码?</string>
+    <!--全局错误相关信息提示-->
+    <string name="tips_global_account_pwd_empty">帐号或密码不能为空</string>
+    <string name="tips_global_phone_number_empty">手机号不能为空</string>
+    <string name="tips_global_phone_number_wrong">手机号格式不正确</string>
+    <string name="tips_global_verify_code_empty">验证码不能为空</string>
+    <string name="tips_global_please_input_right_pwd">请输入6-18位密码</string>
+    <string name="tips_global_please_open_permission">请开启权限</string>
+    <string name="tips_global_please_input_verfy_code">请输入验证码</string>
+    <string name="tips_global_please_input_pwd">请输入密码</string>
+    <string name="tips_global_logout">退出登录</string>
+    <string name="tips_global_reload">重新获取</string>
+    <string name="tips_global_new_version">当前是最新版本!</string>
+    <string name="tips_global_update_version">版本更新:%s</string>
+    <string name="tips_global_again_exit">再按一次返回键退出程序</string>
+    <string name="tips_global_please_enter_phone_number">请输入手机号码</string>
+
+
+    <string name="loading">加载中...</string>
+    <string name="login_success">登录成功</string>
+    <string name="verify_code_success">发送验证码成功</string>
+    <string name="register_success">注册成功</string>
+    <string name="reset_pwd_success">重置密码成功</string>
+    <string name="me_baitiao_bill">白条消费账单</string>
+    <string name="me_dingdan">我的订单</string>
+    <string name="me_baitiao">我的白条</string>
+    <string name="me_rebuy">一键重复购买</string>
+    <string name="me_youhuijuan">优惠券</string>
+    <string name="me_service_online">在线客服</string>
+    <string name="me_help_center">帮助中心</string>
+    <string name="me_about">关于</string>
+    <string name="me_setting">设置</string>
+    <string name="me_weixin1">微信公众号:</string>
+    <string name="me_weixin2">西瓜卡(xiguashangcheng)</string>
+
+    <string name="repayment_agreement">本人已同意</string>
+    <string name="agreement_money">《借款协议》</string>
+    <string name="agreement_shop">《购物协议》</string>
+    <string name="not_bill">您还没有白条消费账单~</string>
+
+    <string name="month">月</string>
+    <string name="day">日</string>
+    <string name="yuan">元</string>
+    <string name="repay_money">应还款总金额</string>
+    <string name="repay_date">还款日期</string>
+    <string name="repay_now">立即还款</string>
+    <string name="bill_history">历史账单</string>
+    <!--Jpush 初始化提示-->
+    <string name="initialization_please_wait">正在初始化，请等待</string>
+
+    <string name="buy_status_waiting">支付中，请耐心等待...</string>
+    <string name="buy_status_success">恭喜您，购买成功</string>
+    <string name="buy_status_failure">购买失败！</string>
+
+    <string name="buy_success_content_before">尊敬的西瓜卡会员，您的会员有效期至</string>
+    <string name="buy_success_content_after">在此之前申请借款，放款成功率将提高90%，到期自动失效。</string>
+    <string name="buy_failure_content">支付未成功，请重新支付！</string>
+    <string name="home_tab">首页</string>
+    <string name="home_verify_tab">首页</string>
+
+    <string name="about_we">  " "多：回收型号丰富多样"\n"
+快：快速评估，急速结款"\n"
+好：最高额度，缓解资金压力"\n"
+省：省时省力，变现轻松钱多多</string>
+
+    <string name="opion">感谢您对本平台的关注与支持，您的宝贵意见将帮助我们不断进步，谢谢！</string>
+    <string name="dialog_select_gallery">选择本地图库</string>
+    <string name="dialog_select_camera">使用摄像头</string>
+
+    <string name="meglive_prompt">请在光线充足的情况下进行检测</string>
+    <string name="meglive_detect_initfailed">检测器初始化失败</string>
+    <string name="meglive_camera_initfailed">打开前置摄像头失败</string>
+    <string name="meglive_getpermission_motion">请打开手机读取运动数据权限</string>
+    <string name="meglive_phone_vertical">请竖直握紧手机</string>
+    <string name="meglive_keep_eyes_open">请勿用手遮挡眼睛</string>
+    <string name="meglive_keep_mouth_open">请勿用手遮挡嘴巴</string>
+    <string name="face_not_found">请让我看到您的正脸</string>
+    <string name="face_too_dark">请让光线再亮点</string>
+    <string name="face_too_bright">请让光线再暗点</string>
+    <string name="face_too_small">请再靠近一些</string>
+    <string name="face_too_large">请再离远一些</string>
+    <string name="face_too_blurry">请避免侧光和背光</string>
+    <string name="face_out_of_rect">请保持脸在人脸框中</string>
+    <string name="meglive_pitch">缓慢点头</string>
+    <string name="meglive_yaw">左右摇头</string>
+    <string name="meglive_mouth_open_closed">张嘴</string>
+    <string name="meglive_eye_open_closed">眨眼</string>
+    <string name="meglive_pos_yaw_left">左转</string>
+    <string name="meglive_pos_yaw_right">右转</string>
+    <string name="tipsmouth">Open your mouth and close.</string>
+    <string name="tipblink">Do blink with your eyes.</string>
+    <string name="tippose">Rotate your pose vertically.</string>
+    <string name="facelost">Face Lost</string>
+    <string name="timeout">超时</string>
+    <string name="authok">Success</string>
+    <string name="aufail">Failed</string>
+    <string name="steps">活体检测:</string>
+    <string name="pos_detection">POS</string>
+    <string name="mouth_detection">MOUTH</string>
+    <string name="blink_detection">BLINK</string>
+
+    <array name="detect_type">
+        <item>眨眼</item>
+        <item>张嘴</item>
+        <item>摇头</item>
+    </array>
+    <array name="detect_result">
+        <item></item>
+        <item>LIVEPASS</item>
+        <item>人脸追踪失败</item>
+        <item>超时失败</item>
+        <item>LIVENOTPASS</item>
+    </array>
+
+    <string name="loading_text">使用说明：\n1、首先您需要输入姓名；\n2、之后您需要按照屏幕上的提示完成3个动作，以通过活体检测，同时软件会将您的人脸图像发送至服务器进行人脸验证；\n3、如果您没有通过活体检测或者人脸验证，则登录失败，反之则登录成功。</string>
+    <string name="loading_confirm">OK,I Know</string>
+    <string name="netowrk_parse_failed">解析服务器数据失败</string>
+    <string name="network_error">网络请求失败</string>
+    <string name="verify_error">验证失败</string>
+    <string name="verify_success">验证成功</string>
+    <string name="liveness_detection_failed">活体检测失败</string>
+    <string name="liveness_detection_failed_timeout">活体检测超时失败</string>
+    <string name="liveness_detection_failed_action_blend">活体检测动作错误</string>
+    <string name="liveness_detection_failed_not_video">活体检测连续性检测失败</string>
+    <string name="novalidframe">没有合适的图像用于人脸识别</string>
+
+    <string name="identity_tip1">请拍摄并上传您的身份证照片</string>
+    <string name="identity_tip2">*请确认识别出的信息与身份证一致，若不一致，请重新拍摄</string>
+    <string name="identity_tip3">*请确认识别出的信息与身份证一致，若不一致，请手动修改</string>
+
+    <string name="text_coupons_tips_no_un_used">暂无可用优惠券</string>
+    <string name="text_coupons_tips_no_used">暂无已用优惠券</string>
+    <string name="text_coupons_tips_no_invalid">暂无过期优惠券</string>
+    <string name="message_center_empty">有消息会第一时间通知哦～</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

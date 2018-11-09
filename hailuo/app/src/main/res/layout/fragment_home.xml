@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/global_bg_gray"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/global_bg_gray"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_main_banner"
+            android:layout_width="match_parent"
+            android:layout_height="188dp">
+            <!--   android:src="@drawable/main_top_img"-->
+            <com.youth.banner.Banner
+                android:id="@+id/home_banner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:banner_layout="@layout/view_home_banner"
+                app:indicator_drawable_selected="@drawable/shape_half_blank_dot"
+                app:indicator_drawable_unselected="@drawable/shape_half_white_dot" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_top"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextSwitcher
+                android:id="@+id/main_top_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:ellipsize="end"
+                android:inAnimation="@anim/push_up_in"
+                android:outAnimation="@anim/push_up_out"
+                android:text="用户22刚刚卖出来了一款iPhone X"
+                android:textColor="@color/global_txt_black5"
+                android:textSize="@dimen/sp_12" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_phone_info_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shadow_bg"
+            android:gravity="center_horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <FrameLayout
+                    android:id="@+id/fl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/icon_dashboard" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/phone_max_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginRight="@dimen/dp_10"
+                        android:layout_marginTop="64dp"
+                        android:gravity="center_horizontal"
+                        android:text="最高额度(元)"
+                        android:textColor="@color/global_txt_black4"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/phone_max_price_"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/phone_max_price"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_horizontal"
+                        android:text="8000"
+                        android:textColor="#ff6633"
+                        android:textSize="46sp" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/rl_bg"
+                        android:layout_below="@id/phone_max_price_"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_horizontal"
+                        android:text="*无需邮寄手机，秒下款"
+                        android:textSize="@dimen/sp_12"
+                        tools:ignore="NotSibling" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/fl"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal">
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/tv_home_phone_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:drawableLeft="@drawable/icon_cell_phone"
+                        android:drawablePadding="@dimen/dp_8"
+                        android:text="系统："
+                        android:textColor="@color/global_txt_black4"
+                        android:textColorHint="@color/edit_text_hint_color"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_home_phone_os"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="android"
+                        android:textColor="@color/global_txt_black4"
+                        android:textSize="14sp" />
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1" />
+
+
+                    <TextView
+                        android:id="@+id/tv_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:drawableLeft="@drawable/iv_home_status"
+                        android:drawablePadding="@dimen/dp_8"
+                        android:text="状态："
+                        android:textColor="@color/global_txt_black4"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/phone_re_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="待申请"
+                        android:textColor="@color/verify_home_title_color"
+                        android:textSize="14sp"
+                        tools:text="待申请待申请" />
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1" />
+
+                    <RelativeLayout
+                        android:id="@+id/rl_phone_memory"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/tv_home_phone_memory"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:text="内存："
+                            android:textColor="@color/global_txt_black4"
+                            android:textSize="14sp"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/tv_home_phone_memory_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@id/tv_home_phone_memory"
+                            android:gravity="center_vertical"
+                            android:text=""
+                            android:textColor="@color/global_txt_black4"
+                            android:textColorHint="@color/edit_text_hint_color"
+                            android:textSize="14sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/arraw_down"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/bt_home_identity"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginEnd="@dimen/dp_20"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_20"
+            android:background="@drawable/global_btn_selector"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_16" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="14dp"
+            android:drawableLeft="@drawable/icon_lightning"
+            android:gravity="center_horizontal"
+            android:text="最快3步申请,1分钟审核，3秒钟到账"
+            android:textColor="@color/global_txt_black5"
+            android:textSize="@dimen/sp_12" />
+
+        <RelativeLayout
+            android:id="@+id/ll_progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_40"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="10dp"
+            android:visibility="gone">
+
+            <include layout="@layout/item_main_progress2" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

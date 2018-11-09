@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_item_assess_success_icon"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:id="@+id/tv_item_assess_success_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/iv_item_assess_success_icon"
+            android:textColor="@color/global_txt_black4"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_item_assess_success_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_item_assess_success_icon"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="9dp"
+            android:layout_toRightOf="@+id/iv_item_assess_success_icon"
+            android:textColor="@color/global_txt_black5"
+            android:textSize="14sp" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/global_activity_bg_color"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/refund_tb"
+        style="@style/AppTheme.Toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_height">
+
+            <TextView
+                android:id="@+id/tv_me_title"
+                style="@style/title_txt_style"
+                android:text="退款" />
+
+            <TextView
+                android:id="@+id/iv_refund_return"
+                style="@style/title_back_style" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/about_we"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="12dp"
+                android:background="@color/global_bg_white">
+
+
+                <TextView
+                    android:id="@+id/should_be_money_key"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:layout_toRightOf="@+id/iv_me_bank_card"
+                    android:text="应退款总金额"
+                    android:textColor="@color/global_txt_black2"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/what"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    android:drawableLeft="@drawable/what"
+                    android:drawablePadding="@dimen/dp_4"
+                    android:text="说明"
+                    android:textColor="@color/global_blue_end"
+                    android:textSize="@dimen/sp_12" />
+
+                <TextView
+                    android:id="@+id/tv_should_be_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/should_be_money_key"
+                    android:text=""
+                    android:textColor="@color/global_txt_black4"
+                    android:textSize="@dimen/sp_14" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="@dimen/dp_15"
+                android:background="@color/global_line_bg" />
+
+            <RelativeLayout
+                android:id="@+id/rl_change_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/global_bg_white"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/facts_money_bank_key"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:layout_toRightOf="@+id/iv_me_exit_login"
+                    android:text="退款账户银行"
+                    android:textColor="@color/global_txt_black2"
+                    android:textSize="@dimen/sp_14" />
+
+                <TextView
+                    android:id="@+id/should_be_bank_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/facts_money_bank_key"
+                    android:text=""
+                    android:textColor="@color/global_txt_black4"
+                    android:textSize="@dimen/sp_14" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_login_out"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="1px"
+                android:background="@color/global_bg_white"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/facts_money_card_key"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="退款卡号"
+                    android:textColor="@color/global_txt_black2"
+                    android:textSize="@dimen/sp_14" />
+
+                <TextView
+                    android:id="@+id/should_be_bank_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/facts_money_card_key"
+                    android:text=""
+                    android:textColor="@color/global_txt_black4"
+                    android:textSize="@dimen/sp_14" />
+
+
+            </RelativeLayout>
+
+            <include layout="@layout/view_pay_way_layout_top" />
+
+            <View style="@style/split_line_style" />
+            <!--银行卡还款-->
+            <include
+                android:id="@+id/bank_way"
+                layout="@layout/view_pay_way_layout_normal" />
+
+            <View style="@style/split_line_style" />
+
+            <!--支付宝还款-->
+            android:visibility="gone"
+            layout="@layout/view_pay_way_layout_normal" />
+
+            <View style="@style/split_line_style" />
+
+            <!--支付宝还款-->
+            <include
+                android:id="@+id/ali_pay"
+                layout="@layout/view_alipay_layout"
+                android:visibility="gone" />
+            <!--微信还款-->
+            <include
+                android:id="@+id/wx_pay"
+                layout="@layout/view_wxpay_layout"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/rl_yhq"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:layout_marginTop="@dimen/dp_12">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/global_bg_white"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dp_15"
+                    android:text="优惠券"
+                    android:textColor="@color/global_txt_black2"
+                    android:textSize="@dimen/sp_14" />
+
+                <TextView
+                    android:id="@+id/tv_yhq"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/textView"
+                    android:layout_alignBottom="@+id/textView"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="16dp"
+                    android:drawablePadding="@dimen/dp_5"
+                    android:textColor="@color/me_txt_red_color"
+                    android:textSize="@dimen/sp_14" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/confim_refund"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_margin="@dimen/dp_15"
+                android:background="@drawable/global_btn_selector"
+                android:gravity="center"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.QuestionFeedBackActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_feed_back"
+        style="@style/AppTheme.Toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_height">
+
+            <TextView
+                android:id="@+id/iv_question_feed_back"
+                style="@style/title_back_style" />
+
+            <TextView
+                android:id="@+id/tv_about"
+                style="@style/title_txt_style"
+                android:text="问题反馈" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/ic_success"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tb_feed_back"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_50"
+        android:src="@drawable/icon_success" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ic_success"
+        android:layout_marginTop="@dimen/dp_50"
+        android:gravity="center_horizontal"
+        android:paddingLeft="@dimen/dp_40"
+        android:paddingRight="@dimen/dp_40"
+        android:text="您的问题已反馈至客服，稍后将有客服人员和您联系！"
+        android:textColor="@color/global_txt_black4"
+        android:textSize="15sp" />
+</RelativeLayout>

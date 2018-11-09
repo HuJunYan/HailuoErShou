@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/global_activity_bg_color"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/order_detail_tb"
+        style="@style/AppTheme.Toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_height">
+
+            <TextView
+                android:id="@+id/iv_order_detail_return"
+                style="@style/title_back_style" />
+
+            <TextView
+                android:id="@+id/tv_home_title"
+                style="@style/title_txt_style"
+                android:text="回收进度" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/rl_time"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="#ffd89e"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/time"
+            android:drawablePadding="@dimen/dp_8"
+            android:gravity="center"
+            android:text="履约期"
+            android:textColor="@color/global_txt_black4"
+            android:textSize="@dimen/sp_14" />
+    </RelativeLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/order_detail_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp_10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/white" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/edit_text_baseline_color" />
+
+            <LinearLayout
+                android:id="@+id/ll_order_detail_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_60"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <TextView
+                    android:id="@+id/confim_buy"
+                    android:layout_width="0dp"
+                    android:layout_height="44dp"
+                    android:layout_margin="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_confirm_sell_out_bg"
+                    android:gravity="center"
+                    android:text="确定卖出"
+                    android:textColor="@color/global_blue_end"
+                    android:textSize="@dimen/sp_16" />
+
+                <TextView
+                    android:id="@+id/no_sell"
+                    android:layout_width="0dp"
+                    android:layout_height="44dp"
+                    android:layout_margin="15dp"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:layout_marginRight="@dimen/dp_15"
+                    android:layout_weight="1"
+                    android:background="@drawable/global_btn_selector"
+                    android:gravity="center"
+                    android:text="不卖了"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_16" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>
+

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/rl_wx_pay"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/global_bg_white"
+        >
+
+        <ImageView
+            android:id="@+id/iv_icon_wx"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            />
+
+        <TextView
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_toRightOf="@id/iv_icon_wx"
+            android:id="@+id/other_pay_wx"
+            style="@style/pay_way_text_style"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text=""
+            />
+
+        <TextView
+            android:text=""
+            android:layout_marginLeft="@dimen/dp_15"
+            android:layout_marginBottom="3dp"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/descption_wx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_icon_wx"
+            android:textSize="10sp"
+            />
+
+        <CheckBox
+
+            android:id="@+id/cb_other_pay_wx"
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_30"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:button="@drawable/select_chose_bank"
+            android:checked="false"
+            />
+
+    </RelativeLayout>
+
+    <View
+        style="@style/split_line_style"
+        />
+
+</LinearLayout>

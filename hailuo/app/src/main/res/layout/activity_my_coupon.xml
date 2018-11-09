@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lgogin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/global_activity_bg_color"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_my_coupon"
+        style="@style/AppTheme.Toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_height">
+
+            <TextView
+                android:id="@+id/iv_my_coupon_return"
+                style="@style/title_back_style" />
+
+            <TextView
+                style="@style/title_txt_style"
+                android:text="我的优惠券" />
+
+            <TextView
+                android:id="@+id/tv_rule"
+                style="@style/title_right_text_style"
+                android:text="使用规则" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <include layout="@layout/layout_global_title_line" />
+
+    <com.androidkun.xtablayout.XTabLayout
+        android:id="@+id/xTablayout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/global_bg_white"
+        app:xTabDisplayNum="3"
+        app:xTabDividerWidthWidthText="true"
+        app:xTabIndicatorColor="@color/global_blue_end"
+        app:xTabIndicatorHeight="2dp"
+        app:xTabMode="scrollable"
+        app:xTabSelectedTextColor="@color/global_txt_black4"
+        app:xTabSelectedTextSize="15sp"
+        app:xTabTextColor="@color/global_txt_black4"
+        app:xTabTextSize="15sp" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"/>
+
+</LinearLayout>
+

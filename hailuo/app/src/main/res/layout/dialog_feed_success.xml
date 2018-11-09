@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_dialog_error_border"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="29dp"
+        android:textSize="@dimen/sp_16"
+        android:textColor="@color/global_txt_black4"
+        android:text="吐槽成功"/>
+
+    <TextView
+        android:id="@+id/tv_dialog_feed_success_tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:lineSpacingExtra="3dp"
+        android:paddingBottom="34dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_marginTop="29dp"
+        android:text="已收到您的建议，我们非常重视您的建议，会尽快为您解决！"
+        android:textColor="@color/global_txt_black5"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_dialog_feed_success_know"
+        android:layout_width="150dp"
+        android:layout_height="36dp"
+        android:layout_below="@id/ll_progress"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/global_btn_selector"
+        android:gravity="center"
+        android:text="我知道了"
+        android:textColor="@color/white" />
+
+</LinearLayout>

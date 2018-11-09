@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_item_dialog_style"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_dialog_assess_success_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="28dp"
+        android:textColor="@color/global_txt_black4"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_dialog_assess_success_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/global_txt_black5"
+        android:textSize="14sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="25dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我阅读并理解"
+            android:textColor="@color/global_txt_black4"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_dialog_assess_success_agreement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="top|center_horizontal"
+            android:textColor="@color/global_blue_end"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="25dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_dialog_assess_success_not_agree"
+            android:layout_width="110dp"
+            android:layout_height="36dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/shape_confirm_sell_out_bg"
+            android:gravity="center"
+            android:text="不同意"
+            android:textColor="@color/global_blue_end"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_dialog_assess_success_agree"
+            android:layout_width="110dp"
+            android:layout_height="36dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/global_btn_selector"
+            android:gravity="center"
+            android:text="同意"
+            android:textColor="@color/global_txt_white"
+            android:textSize="14sp" />
+    </RelativeLayout>
+</LinearLayout>

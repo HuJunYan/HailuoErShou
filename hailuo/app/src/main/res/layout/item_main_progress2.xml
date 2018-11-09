@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/dp_20">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1">
+
+        <TextView
+
+            android:id="@+id/iv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="最快"
+            android:textSize="@dimen/dp_14"
+            android:textColor="@color/global_txt_black5" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_horizontal"
+            android:text="3步申请"
+            android:textColor="@color/global_txt_black5"
+            android:textSize="@dimen/sp_14" />
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/icon_arrow"/>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1">
+
+        <TextView
+
+            android:id="@+id/iv3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="最快"
+            android:textSize="@dimen/dp_14"
+            android:textColor="@color/global_txt_black5" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv3"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_horizontal"
+            android:text="1分钟审核"
+            android:textColor="@color/global_txt_black5"
+            android:textSize="@dimen/sp_14" />
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/icon_arrow"/>
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1">
+
+        <TextView
+
+            android:id="@+id/iv2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="最快"
+            android:textSize="@dimen/dp_14"
+            android:textColor="@color/global_txt_black5" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv2"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_horizontal"
+            android:text="3秒钟到账"
+            android:textColor="@color/global_txt_black5"
+            android:textSize="@dimen/sp_14" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

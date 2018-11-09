@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+
+
+        <TextView
+            android:id="@+id/tv_income_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:text="2.00"
+            android:textColor="@color/global_txt_black4"
+            android:textSize="@dimen/sp_14" />
+
+        <TextView
+            android:id="@+id/tv_invite_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_20"
+            android:text="邀请下单-13522210361"
+            android:textColor="@color/global_txt_black4"
+            android:textSize="@dimen/sp_14" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_income_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/rl"
+        android:layout_marginRight="@dimen/dp_20"
+        android:paddingBottom="16dp"
+        android:paddingTop="@dimen/dp_14"
+        android:text="2017/06/12 16:43"
+        android:textColor="@color/global_txt_black6"
+        android:textSize="@dimen/sp_12" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/tv_income_time"
+        android:background="#EEEEEE" />
+
+</RelativeLayout>

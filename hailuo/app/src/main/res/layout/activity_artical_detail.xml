@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.ArticalDetailActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_message_center2"
+        style="@style/AppTheme.Toolbar">
+
+        <TextView
+            android:id="@+id/iv_message_center_article_return"
+            style="@style/title_back_style" />
+
+         <!--<TextView-->
+             <!--style="@style/title_txt_style"-->
+             <!--android:text="消息中心" />-->
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_msg_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_20"
+                android:gravity="center_horizontal"
+                android:text=""
+                android:textColor="@color/global_txt_black4"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_msg_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="13dp"
+                android:gravity="center_horizontal"
+                android:text=""
+                android:textColor="@color/global_txt_black5"
+                android:textSize="@dimen/sp_12" />
+
+            <TextView
+                android:id="@+id/tv_msg_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/dp_15"
+                android:layout_marginRight="@dimen/dp_15"
+                android:layout_marginTop="@dimen/dp_18"
+                android:text=""
+                android:textColor="@color/global_txt_black4"
+                android:textSize="@dimen/sp_14" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

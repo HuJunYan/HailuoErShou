@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/shape_dialog_error_border"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/ic_auth_error" />
+
+    <TextView
+        android:id="@+id/tv_dialog_auth_error_tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:lineSpacingExtra="3dp"
+        android:paddingBottom="25dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:paddingTop="15dp"
+        android:text=""
+        android:lineSpacingMultiplier="1.2"
+        android:textColor="@color/global_txt_black4"
+        android:textSize="15sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_below="@id/ll_progress"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="@dimen/dp_30"
+        android:layout_marginStart="@dimen/dp_30"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/global_btn_selector"
+        android:gravity="center">
+
+
+        <TextView
+            android:id="@+id/tv_dialog_auth_error_try"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:drawableLeft="@drawable/icon_have_a_try"
+            android:drawablePadding="@dimen/dp_5"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/white" />
+    </RelativeLayout>
+</LinearLayout>
